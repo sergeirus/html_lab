@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регестрации</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p><label for="login">Логин</label> <br>
+        <input type="text" placeholder="введите логин"></p>
+
+        <p><label for="login">Пароль</label> <br>
+            <input type="password" placeholder="введите пароль"></p>
+
+        <p><label for="login">Подтверждение пароля</label> <br>
+            <input type="password" placeholder="подтвердите пароль"></p>
+
+        <p><label for="login">email</label> <br>
+            <input type="text" placeholder="введите адрес"></p>
+
+        <h3> Информация о себе</h3>
+        
+        <p><label for="data">Дата рождения</label> <br>
+            <input type="date"></p>
+        
+        <p><label for="sex">Пол</label> <br>
+            <input type="radio" id="s1" name="sex" value="male">
+            <label for="s1">M</label>
+
+            <input type="radio" id="s2" name="sex" value="female">
+            <label for="s2">Ж</label>
+
+            <input type="radio" id="s3" name="sex" value="*">
+            <label for="s3">Не скажу</label></p>
+
+        <p>
+            <h4> Знаю языки програмирования</h4>
+            <input type="checkbox" id="l1" value="python">
+            <label for="l1">Python</label> <br>
+
+            <input type="checkbox" id="l2" value="c++">
+            <label for="l2">C++</label> <br>
+
+
+            <input type="checkbox" id="l3" value="php">
+            <label for="l3">PHP</label> <br>
+        </p>
+
+        <label for="fak">Факультет:</label>
+        <input list="faks" id="fak" name="fak" />
+            <datalist id="faks">
+                <option value="Мех-мат"></option>
+                <option value="Физический"></option>
+            </datalist>
+        
+
+        <p><label for="inf">Дополнительная информация</label> <br>
+            <textarea name="" id="" cols="100" rows="5"></textarea></p>
+
+
+        <input type="submit" value="Зарегестрироваться">
+
+    </form>
+    
+</body>
+</html>
